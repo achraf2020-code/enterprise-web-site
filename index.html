@@ -292,6 +292,117 @@
             </div>
         </div>
     </section>
+    <section class="testimonials-container">
+        <div class="section-title p-y">
+            <h1>Testimonials</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, voluptatem animi veritatis nihil numquam officiis vitae veniam delectus reiciendis! Quod.</p>
+        </div>
+        <div class="warpper">
+           
+            <div class="testimonials-content">
+              <div class="box-review">
+                  <div id="slide">
+                      <div class="card3">
+                          <div class="profile">
+                            <img src="./slider/Review_Slider_Img/pic1.jpg" alt="">
+                            <div>
+                                <h3>Reliey Olie</h3>
+                                <p>Web designer</p>
+                            </div>
+                          </div>
+                         
+                          <p><q>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Ullam nulla at quidem corrupti,eaque nihil sint pariatur quibusdam! Aut aliquid ab officiis veniam.
+                               Beatae fugit voluptatum error, laborum enim explicabo!</q>
+                          </p>
+                      </div>
+                      <div class="card3">
+                        <div class="profile">
+                          <img src="./slider/Review_Slider_Img/pic2.jpg" alt="">
+                          <div>
+                              <h3>Marlyn Nugian</h3>
+                              <p>Senior Developer</p>
+                          </div>
+                        </div>
+                       
+                        <p><q>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ullam nulla at quidem corrupti,eaque nihil sint pariatur quibusdam! Aut aliquid ab officiis veniam.
+                             Beatae fugit voluptatum error, laborum enim explicabo!</q>
+                        </p>
+                    </div>
+                    <div class="card3">
+                        <div class="profile">
+                          <img src="./slider/Review_Slider_Img/pic3.jpg" alt="">
+                          <div>
+                              <h3>John Williams</h3>
+                              <p>Team Lead</p>
+                          </div>
+                        </div>
+                       
+                        <p><q>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ullam nulla at quidem corrupti,eaque nihil sint pariatur quibusdam! Aut aliquid ab officiis veniam.
+                             Beatae fugit voluptatum error, laborum enim explicabo!</q>
+                        </p>
+                    </div>
+                    <div class="card3">
+                        <div class="profile">
+                          <img src="./slider/Review_Slider_Img/pic4.jpg" alt="">
+                          <div>
+                              <h3>Alen Dubont</h3>
+                              <p>Developer</p>
+                          </div>
+                        </div>
+                       
+                        <p><q>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ullam nulla at quidem corrupti,eaque nihil sint pariatur quibusdam! Aut aliquid ab officiis veniam.
+                             Beatae fugit voluptatum error, laborum enim explicabo!</q>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="slide-bar">
+                        <img src="./slider/Review_Slider_Img/up-arrow.png" alt="" id="up-arrow">
+                        <img src="./slider/Review_Slider_Img/down-arrow.png" alt="" id="down-arrow">
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
 </main>
+<footer>
+    <div class="warpper">
+        <div class="footer-content">
+            <div class="cop-right">
+              <small>
+                &COPY;
+                Achraf 2021
+            </small>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+<script>
+    var slide=document.getElementById("slide");
+    var upArrow= document.getElementById("up-arrow");
+    var downArrow = document.getElementById("down-arrow");
+
+    var x=0;
+    upArrow.onclick=function(){
+        if(x > "-900"){
+        x=x-300;
+        slide.style.top=x+"px";
+        }
+    }
+    downArrow.onclick=function(){
+        if(x <0){
+        x=x+300;
+        slide.style.top=x+"px";
+        }
+    }
+</script>
 </body>
 </html>
