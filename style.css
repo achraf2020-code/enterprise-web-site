@@ -416,6 +416,28 @@ margin: 54px 0;
 .content-partner .brand-img:hover{
     filter: brightness(100%) contrast(100%); 
 }
+/* section statstic 2 */
+.static-text-2{
+    background: #FAF9F7;
+    width: 50%;
+    height: 900px;
+}
+.static-img{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.static-img img{
+    position: absolute;
+   top: 237px;
+    left: 0;
+}
+
+.section-content2::after{
+width: 50% !important;
+left: 50% !important;
+}
+
 /* section team */
 .card2{
     /* height: 250px; */
