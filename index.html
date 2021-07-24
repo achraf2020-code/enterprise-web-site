@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="up" id="up">
+        <img src="./img/up-icon.png" alt="">
+    </div>
    <div class="nav-container">
        <div class="warpper">
            <nav>
@@ -386,10 +389,28 @@
     </div>
 </footer>
 <script>
+    // up icon
+    var btnUp = document.getElementById("up");
     var slide=document.getElementById("slide");
     var upArrow= document.getElementById("up-arrow");
     var downArrow = document.getElementById("down-arrow");
-
+    var sY=0;
+    window.onscroll = function(){
+        sY=window.scrollY;
+        console.log(window.scrollY)
+        if( sY>= 1000){
+            btnUp.classList.add("show");
+        }
+        else{
+            btnUp.classList.remove("show");
+        }
+    }
+    btnUp.onclick=function(){
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+    }
     var x=0;
     upArrow.onclick=function(){
         if(x > "-900"){
