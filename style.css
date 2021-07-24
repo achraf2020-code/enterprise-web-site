@@ -294,9 +294,11 @@ width: 200px;
 padding: 27px;
 
 }
-.card .buttom a{
+
+.btn-link{
     color: #FDA63F;
     text-align: left;
+    width: 408px;
 }
 /* section statistic */
 .sta-container{
@@ -402,7 +404,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 33px;
 text-align: left;
-margin: 54px 0;
+margin: 54px 0 8px;
 }
 /* section bands */
 .partener-container{
