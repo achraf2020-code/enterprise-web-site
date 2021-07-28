@@ -71,12 +71,16 @@ nav .navigation{
     font-size: 15px;
     font-weight: bold;
     color: white;
+<<<<<<< HEAD
     transition-property: color;
     transition-timing-function: ease;
     transition-duration:0.5s ; 
 }
 .navigation li:hover a{
     color: #0057FF; 
+=======
+   
+>>>>>>> 3b7365e733f4381805ddfe513d6ede1b364c7c67
 }
 /* header section */
 .header-container{
